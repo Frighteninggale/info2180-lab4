@@ -1,0 +1,100 @@
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f0f0f0;
+    margin: 20px;
+}
+
+#app-container {
+    max-width: 800px;
+    margin: 0 auto;
+    border: 1px solid #ccc;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    background-color: white;
+}
+
+header {
+    background-color: #4a74a5; /* Blue header */
+    color: white;
+    padding: 20px;
+    text-align: center;
+}
+
+h1 {
+    margin: 0;
+    font-size: 24px;
+}
+
+main {
+    padding: 20px;
+}
+
+#search-container {
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 20px;
+}
+
+#search-container label {
+    margin-bottom: 5px;
+    font-size: 14px;
+}
+
+#search-field {
+    padding: 10px;
+    border: 1px solid #ccc;
+    width: 100%; /* Take up max width initially */
+    box-sizing: border-box;
+    margin-right: 10px;
+}
+
+/* Adjust layout for button/field on the same line */
+#search-container {
+    flex-direction: row;
+    align-items: flex-end; /* Align elements to the bottom */
+}
+
+#search-container label {
+    display: block;
+    margin-right: 20px;
+    line-height: 1.5;
+}
+
+#search-field {
+    flex-grow: 1; /* Allows the input to take up available space */
+    max-width: 70%;
+}
+
+#search-btn {
+    background-color: #c9302c; /* Red button */
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    cursor: pointer;
+    text-transform: uppercase;
+    font-weight: bold;
+}
+
+#result-wrapper {
+    margin-top: 20px;
+}
+
+#result-wrapper h3 {
+    border-bottom: 1px solid #ccc;
+    padding-bottom: 5px;
+    margin-bottom: 15px;
+}
+
+/* Styling for specific elements in the result div */
+#result h2 {
+    color: #c9302c; /* Red text for the main alias/name */
+    margin-top: 0;
+}
+
+#result p {
+    margin-bottom: 10px;
+}
+
+.not-found {
+    color: #c9302c; /* Red text for error message */
+    font-weight: bold;
+}
